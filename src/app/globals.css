@@ -1,26 +1,112 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  :focus-visible {
+    outline: 2px solid #5b8cff;
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+  ::selection {
+    background: rgba(91, 140, 255, 0.1);
+    color: #ededef;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav__links a.is-active {
+    color: #ededef !important;
+    border-color: #ededef !important;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar styles */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #232327;
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #3a3a42;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #5b8cff;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3a42 #232327;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .project:hover {
+      transform: none;
+    }
+  }
+
+  /* Responsive utilities */
+  @media (max-width: 720px) {
+    .hero {
+      padding-top: 88px !important;
+      padding-bottom: 64px !important;
+    }
+    .section {
+      padding-top: 64px !important;
+      padding-bottom: 64px !important;
+    }
+    .section--tight {
+      padding-top: 52px !important;
+      padding-bottom: 52px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .project__body {
+      padding: 22px 20px 26px !important;
+    }
+    .mock__body {
+      min-height: 150px !important;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .skills__row {
+      flex-direction: column !important;
+      gap: 8px !important;
+    }
+    .skills__label {
+      width: auto !important;
+    }
+  }
 }
