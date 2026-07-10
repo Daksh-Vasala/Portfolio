@@ -21,9 +21,8 @@ export default function HomePage() {
           </h1>
           <p className="text-[18px] leading-[1.65] text-[#a1a1a8] max-w-[60ch] mb-9 reveal">
             MERN Stack Developer focused on REST APIs, authentication, scalable
-            backend architecture, and modern frontend development. Final-year
-            Computer Engineering student actively seeking Full Stack, Backend,
-            and SDE-1 opportunities.
+            backend architecture, and modern frontend development. Actively
+            seeking Full Stack, Backend, Frontend and SDE-1 opportunities.
           </p>
           <div className="flex gap-3 flex-wrap mb-10 reveal">
             <Link
