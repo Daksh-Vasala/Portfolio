@@ -22,12 +22,14 @@ export const metadata: Metadata = {
   title: "Daksh Vasala — MERN Stack Developer",
   description:
     "Daksh Vasala — MERN Stack Developer building scalable full-stack applications with secure authentication and clean APIs. Open to Full Stack, Backend, and SDE-1 roles.",
+   icons: {
+    icon: "/favicon.ico",
+  },
   keywords: ["MERN Stack", "Full Stack Developer", "React", "Node.js", "TypeScript", "Next.js"],
   authors: [{ name: "Daksh Vasala" }],
   openGraph: {
     title: "Daksh Vasala — MERN Stack Developer",
     description: "Building scalable full-stack applications with secure authentication and clean APIs.",
-    url: "https://dakshvasala.dev",
     siteName: "Daksh Vasala Portfolio",
     locale: "en_US",
     type: "website",
@@ -41,9 +43,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className="bg-[#0a0a0b] text-[#ededef] font-sans text-[17px] leading-[1.6] antialiased m-0">
         <ClientInit />
         

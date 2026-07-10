@@ -26,7 +26,7 @@ export default function ClientInit() {
 
     // ===== Active nav link on scroll =====
     const links = document.querySelectorAll<HTMLAnchorElement>(
-      '.nav__links a[data-nav]'
+      '.nav a[data-nav]'
     );
     const sections = Array.from(links)
       .map((link) => document.getElementById(link.dataset.nav!))
@@ -36,7 +36,7 @@ export default function ClientInit() {
         (entries) => {
           entries.forEach((entry) => {
             const link = document.querySelector<HTMLAnchorElement>(
-              `.nav__links a[data-nav="${entry.target.id}"]`
+              `.nav a[data-nav="${entry.target.id}"]`
             );
             if (!link) return;
             if (entry.isIntersecting) {
