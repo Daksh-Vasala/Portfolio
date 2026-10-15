@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daksh Vasala — MERN Stack Developer",
+  title: "Daksh Vasala — Full Stack Developer",
   description:
     "Daksh Vasala — MERN Stack Developer building scalable full-stack applications with secure authentication and clean APIs. Open to Full Stack, Backend, and SDE-1 roles.",
    icons: {
@@ -28,11 +28,14 @@ export const metadata: Metadata = {
   keywords: ["MERN Stack", "Full Stack Developer", "React", "Node.js", "TypeScript", "Next.js"],
   authors: [{ name: "Daksh Vasala" }],
   openGraph: {
-    title: "Daksh Vasala — MERN Stack Developer",
+    title: "Daksh Vasala — Full Stack Developer",
     description: "Building scalable full-stack applications with secure authentication and clean APIs.",
     siteName: "Daksh Vasala Portfolio",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    title: "Daksh Vasala — Full Stack Developer",
   },
 };
 

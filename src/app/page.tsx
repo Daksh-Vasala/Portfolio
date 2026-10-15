@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="flex gap-3 flex-wrap mb-10 reveal">
             <Link
               className="inline-flex items-center justify-center gap-2 px-5.5 py-3 rounded-lg text-[15px] font-semibold bg-[#ededef] text-[#0a0a0b] hover:opacity-90 transition-opacity"
-              href="/resume/Daksh-resume.pdf"
+              href="/resume/Daksh_Vasala_Full_Stack_Developer_Resume.pdf"
               target="_blank"
               rel="noopener"
             >
