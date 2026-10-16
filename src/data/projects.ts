@@ -1,6 +1,38 @@
 // src/data/projects.ts - Updated with more descriptive content
 export const projects = [
   {
+    title: "CareerPilot",
+    description: "AI Career Management Platform",
+    images: [
+      "/career-pilot/Screenshot%202026-10-16%20110335.png",
+      "/career-pilot/Screenshot%202026-10-16%20110427.png",
+      "/career-pilot/Screenshot%202026-10-16%20110439.png",
+      "/career-pilot/Screenshot%202026-10-16%20110448.png",
+      "/career-pilot/Screenshot%202026-10-16%20110501.png",
+      "/career-pilot/Screenshot%202026-10-16%20110513.png",
+      "/career-pilot/Screenshot%202026-10-16%20110534.png",
+    ],
+    imageAlt: "CareerPilot - AI career management platform preview",
+    points: [
+      "Built a full-stack job and interview tracker with Next.js, TypeScript, Express, and PostgreSQL (Drizzle ORM)",
+      "Integrated the Google Gemini API for AI resume analysis and career roadmap generation",
+      "Added authentication, profile management, and Cloudinary resume upload; deployed on Vercel and Render",
+      "Designed a responsive dashboard UI with Tailwind CSS, including dark mode",
+    ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Express",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "Gemini API",
+      "Cloudinary",
+    ],
+    githubUrl: "https://github.com/Daksh-Vasala/Career-pilot",
+    liveDemoUrl: "https://career-pilot-psi-two.vercel.app/",
+  },
+  {
     title: "Stayora",
     description:
       "Multi-role rental platform with role-based dashboards for Guest, Host, and Admin, and a full reservation lifecycle.",
@@ -14,11 +46,10 @@ export const projects = [
     ],
     imageAlt: "Stayora - Rental platform preview",
     points: [
-      'Role-based dashboards with <strong class="text-[#ededef] font-semibold">RBAC</strong> across Guest, Host, and Admin.',
-      '<strong class="text-[#ededef] font-semibold">Conflict-free reservation engine</strong> with real-time availability validation — zero double-bookings.',
-      'Scoped <strong class="text-[#ededef] font-semibold">chat system</strong> limited to active reservation participants.',
-      "Centralized admin dashboard for moderation, cutting dispute resolution time by 40%.",
-      '<strong class="text-[#ededef] font-semibold">JWT authentication</strong>, protected routes, and <strong class="text-[#ededef] font-semibold">Cloudinary</strong> for media storage.',
+      "Role-based dashboards with RBAC across Guest, Host, and Admin.",
+      "Reservation engine with availability validation to prevent overlapping bookings.",
+      "Scoped chat system limited to active reservation participants.",
+      "Centralized admin dashboard for moderation.",
     ],
     tags: [
       "React.js",
@@ -34,8 +65,7 @@ export const projects = [
   },
   {
     title: "Scatch",
-    description:
-      "Full-stack e-commerce platform covering the complete purchase flow, with separate user and admin roles.",
+    description: "E-Commerce Platform",
     images: [
       "/scatch/dashboard.png",
       "/scatch/checkout-page.png",
@@ -45,47 +75,19 @@ export const projects = [
     ],
     imageAlt: "Scatch - E-commerce platform preview",
     points: [
-      '<strong class="text-[#ededef] font-semibold">JWT authentication</strong> with distinct user and admin roles.',
-      'Cart management, product filtering, and order processing built on <strong class="text-[#ededef] font-semibold">REST APIs</strong>.',
-      'Input <strong class="text-[#ededef] font-semibold">validation</strong> and error handling across auth, product, and order endpoints.',
+      "Developed a full-stack e-commerce platform with JWT authentication and distinct user and admin roles",
+      "Built cart management, product filtering, and order processing on REST APIs",
+      "Added input validation and error handling across auth, product, and order endpoints",
     ],
     tags: [
-      "React.js",
+      "React",
       "Node.js",
-      "Express.js",
+      "Express",
       "MongoDB",
       "JWT",
       "Tailwind CSS",
     ],
     githubUrl: "https://github.com/Daksh-Vasala/Scatch",
-    liveDemoUrl: undefined,
-  },
-  {
-    title: "AI Component Generator",
-    description:
-      "AI-powered UI component generator that converts natural language descriptions into production-ready HTML code using Google Gemini AI, with live preview and export capabilities.",
-    images: [
-      "/ai-comp/dashboard.png",
-      "/ai-comp/code.png",
-      "/ai-comp/preview.png",
-    ],
-    imageAlt: "AI Component Generator - AI-powered UI code generator preview",
-    points: [
-      'Generates <strong class="text-[#ededef] font-semibold">production-ready HTML code</strong> from natural language prompts using Google Gemini AI.',
-      'Multi-framework support with <strong class="text-[#ededef] font-semibold">framework selection</strong> (React, Vue, Angular, etc.) for tailored code generation.',
-      '<strong class="text-[#ededef] font-semibold">Monaco Editor integration</strong> with syntax highlighting and <strong class="text-[#ededef] font-semibold">live iframe preview</strong> for instant code visualization.',
-      'Export utilities including <strong class="text-[#ededef] font-semibold">copy to clipboard</strong>, <strong class="text-[#ededef] font-semibold">download as HTML</strong>, and <strong class="text-[#ededef] font-semibold">open preview in new tab</strong>.',
-      'Dark-themed <strong class="text-[#ededef] font-semibold">responsive interface</strong> with split-panel layout, toast notifications, and loading states.',
-    ],
-    tags: [
-      "React.js",
-      "Google Gemini AI",
-      "Monaco Editor",
-      "Tailwind CSS",
-      "react-toastify",
-      "react-icons",
-    ],
-    githubUrl: "https://github.com/Daksh-Vasala/AI-component-generator",
-    liveDemoUrl: undefined,
+    liveDemoUrl: "", // TODO: Add a live demo URL when one is available.
   },
 ];

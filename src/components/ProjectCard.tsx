@@ -42,9 +42,6 @@ export default function ProjectCard({
   // Limit to 4 strongest points
   const displayPoints = points.slice(0, 4);
   
-  // Limit to 6 relevant technologies
-  const displayTags = tags.slice(0, 6);
-
   return (
     <article className="bg-[#111113] border max-w-4xl w-full mx-auto border-[#232327] rounded-xl overflow-hidden hover:border-[#34343c] hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.35)] transition-all flex flex-col">
       {/* Image Section - Consistent width */}
@@ -130,7 +127,7 @@ export default function ProjectCard({
         
         {/* Tags - 6 items */}
         <div className="flex flex-wrap gap-1.5 mb-3">
-          {displayTags.map((tag) => (
+          {tags.map((tag) => (
             <span
               key={tag}
               className="inline-flex items-center bg-[rgba(255,255,255,0.04)] border border-[#232327] rounded-md px-2.5 py-1 text-[11px] text-[#a1a1a8]"

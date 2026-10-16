@@ -14,7 +14,7 @@ export default function HomePage() {
       <section id="top" className="py-30 md:py-24">
         <div className="container max-w-180 mx-auto px-6">
           <p className="font-mono text-[13.5px] font-medium text-[#5b8cff] tracking-[0.04em] uppercase mb-5 reveal">
-            MERN Stack Developer
+            Full Stack Developer
           </p>
           <h1 className="text-[clamp(32px,5vw,46px)] font-bold leading-[1.2] tracking-[-0.02em] mb-5.5 text-[#ededef] reveal">
             Building secure, scalable full-stack web applications.
@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="flex gap-3 flex-wrap mb-10 reveal">
             <Link
               className="inline-flex items-center justify-center gap-2 px-5.5 py-3 rounded-lg text-[15px] font-semibold bg-[#ededef] text-[#0a0a0b] hover:opacity-90 transition-opacity"
-              href="/resume/Daksh_Vasala_Full_Stack_Developer_Resume.pdf"
+              href="/resume/Daksh-resume.pdf"
               target="_blank"
               rel="noopener"
             >
@@ -111,6 +111,31 @@ export default function HomePage() {
                   MERN Stack Intern
                 </h3>
                 <p className="text-[15px] text-[#a1a1a8] m-0">
+                  Ker Infotech, Ahmedabad, Gujarat
+                </p>
+              </div>
+              <span className="font-mono text-[13.5px] text-[#6b6b72] whitespace-nowrap">
+                Sept 2026 – Present
+              </span>
+            </div>
+            <ul className="m-0 pl-5 text-[15.5px] text-[#a1a1a8] list-disc">
+              <li className="mb-2.5">
+                Building a production-style full-stack application with React,
+                Node.js, and Express.js on a PostgreSQL database.
+              </li>
+              <li className="mb-2.5">
+                Working with Drizzle ORM and PostgreSQL for data modeling and
+                queries, in a mentor-led training program.
+              </li>
+            </ul>
+          </div>
+          <div className="reveal">
+            <div className="flex items-baseline justify-between gap-4 flex-wrap mb-4.5 pb-4.5 border-b border-[#232327]">
+              <div>
+                <h3 className="text-[19px] font-bold m-0 mb-1">
+                  MERN Stack Intern
+                </h3>
+                <p className="text-[15px] text-[#a1a1a8] m-0">
                   Royal Technosoft Pvt. Ltd. — Ahmedabad, Gujarat
                 </p>
               </div>
@@ -120,57 +145,23 @@ export default function HomePage() {
             </div>
             <ul className="m-0 pl-5 text-[15.5px] text-[#a1a1a8] list-disc">
               <li className="mb-2.5">
-                Developed a{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  multi-role rental platform
-                </strong>{" "}
-                supporting Guest, Host, and Admin workflows with{" "}
-                <strong className="text-[#ededef] font-semibold">RBAC</strong>.
+                Developed a multi-role rental platform supporting Guest, Host,
+                and Admin workflows with RBAC.
               </li>
               <li className="mb-2.5">
-                Designed{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  REST APIs
-                </strong>{" "}
-                for authentication, listings, and user management using{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  Node.js
-                </strong>
-                ,{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  Express.js
-                </strong>
-                , and{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  MongoDB
-                </strong>{" "}
-                — reduced response time by 25%.
+                Designed REST APIs for authentication, listings, and user
+                management using Node.js, Express.js, and MongoDB.
               </li>
               <li className="mb-2.5">
-                Engineered a conflict-free reservation system with availability
-                validation, eliminating 100% of double-booking errors.
+                Built a reservation system with availability validation to
+                prevent overlapping bookings.
               </li>
               <li className="mb-2.5">
-                Implemented{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  JWT + session authentication
-                </strong>
-                , protected routes, authorization middleware, and{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  Cloudinary
-                </strong>{" "}
-                integration.
+                Implemented JWT + session authentication, protected routes,
+                authorization middleware, and Cloudinary integration.
               </li>
               <li className="mb-2.5">
-                Built responsive UI components using{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  React.js
-                </strong>{" "}
-                and{" "}
-                <strong className="text-[#ededef] font-semibold">
-                  Tailwind CSS
-                </strong>{" "}
-                — improved page load speed by 30%.
+                Built responsive UI components using React.js and Tailwind CSS.
               </li>
             </ul>
           </div>
