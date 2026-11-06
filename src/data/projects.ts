@@ -5,7 +5,6 @@ export const projects = [
     description: "AI Career Management Platform",
     images: [
       "/career-pilot/Screenshot%202026-10-16%20110335.png",
-      "/career-pilot/Screenshot%202026-10-16%20110427.png",
       "/career-pilot/Screenshot%202026-10-16%20110439.png",
       "/career-pilot/Screenshot%202026-10-16%20110448.png",
       "/career-pilot/Screenshot%202026-10-16%20110501.png",
