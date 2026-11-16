@@ -115,7 +115,7 @@ export default function HomePage() {
                 </p>
               </div>
               <span className="font-mono text-[13.5px] text-[#6b6b72] whitespace-nowrap">
-                Sept 2026 – Present
+                Sept 2026 – Nov 2026
               </span>
             </div>
             <ul className="m-0 pl-5 text-[15.5px] text-[#a1a1a8] list-disc">
